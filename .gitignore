@@ -16,5 +16,5 @@ phpunit.xml*
 /vendor/
 /web/bundles/
 
-.idea
+/.idea
 composer.lock
