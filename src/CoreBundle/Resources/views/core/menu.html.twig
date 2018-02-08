@@ -1,0 +1,7 @@
+<ul class="nav">
+    {% for nav in navItems %}
+    <li class="nav-item">
+        <a class="nav-link {{ nav.active }}" href="{{ nav.link }}">{{ nav.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

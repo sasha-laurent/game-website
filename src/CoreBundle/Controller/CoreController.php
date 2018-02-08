@@ -10,4 +10,24 @@ class CoreController extends Controller
     {
         return $this->render('@Core/core/index.html.twig');
     }
+    
+    public function menuAction()
+    {
+        $navItems = array(
+            array(
+                "name" => "Home",
+                "link" => "/",
+                "active" => "active"
+            ),
+            array(
+                "name" => "Back to sashalaurent.com",
+                "link" => "http://www.sashalaurent.com",
+                "active" => ""
+            )
+        );
+
+        return $this->render('@Core/core/menu.html.twig', array(
+            "navItems" => $navItems
+        ));
+    }
 }
