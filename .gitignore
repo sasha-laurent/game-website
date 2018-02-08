@@ -17,4 +17,5 @@ phpunit.xml*
 /web/bundles/
 
 /.idea
+/.idea/*
 composer.lock
