@@ -1,5 +1,5 @@
 body {
-    background: url("/assets/images/background.png") no-repeat fixed center;
+    background: url("/assets/images/Labyrinth_Screenshot.png") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -8,29 +8,29 @@ body {
     top: 0;
     width: 100%;
     height: 40px;
-    background-color: #111111;
-    color: #FFFFFF;
+    color: #111111;
+    background-color: #FFFFFF;
     z-index: 1;
 }
 
 .menu a {
-    color: #FFFFFF;
+    color: #111111;
 }
 
 .menu li:hover{
-    background-color: #FFFFFF;
+    background-color: #111111;
 }
 
 .menu li a:hover{
-    color: #333333;
+    color: #FFFFFF;
 }
 
 .menu li:active{
-    background-color: #333333;
+    background-color: #FFFFFF;
 }
 
 .menu li a:active{
-    color: #FFFFFF;
+    color: #111111;
 }
 
 .menu .nav {
@@ -39,9 +39,9 @@ body {
 
 .content {
     margin-top: 40px;
-    background-color: #333333;
+    background-color: #111111;
     color: #FFFFFF;
-    max-width: 1000px;
+    max-width: 100%;
     height: calc( 100vh - 40px );
 }
 
@@ -78,37 +78,39 @@ body {
 }
 
 .path {
-    height: 100%
+    height: 100%;
+    background-color: #111111;
 }
 
 .thinking {
-    background-color: darkgreen;
+    color: darkgreen;
 }
 
 .thinking:hover {
-    background-color: lightgreen;
+    color: lightgreen;
 }
 
 .jumping {
-    background-color: #f3b937;
+    color: #f3b937;
 }
 
 .jumping:hover {
-    background-color: #ffd577;
+    color: #ffd577;
 }
 
 .dodging {
-    background-color: darkred;
+    color: darkred;
 }
 
 .dodging:hover {
-    background-color: red;
+    color: red;
 }
 
 footer {
     background-color: #111111;
     color: #FFFFFF;
     text-align: center;
+    padding:20px;
 }
 
 footer a {
