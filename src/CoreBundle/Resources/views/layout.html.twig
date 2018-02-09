@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}" />
+    <link rel="stylesheet" href="{{ asset("assets/css/icons.css") }}" />
+    <link rel="stylesheet" href="{{ asset("assets/open-iconic/font/css/open-iconic-bootstrap.css") }}" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
 
@@ -19,17 +21,13 @@
     <div id="menu" class="menu">
         {{ render(controller("CoreBundle:Core:menu")) }}
     </div>
-    
-    <div id="content" class="container content">
-        {% block content %}
-        {% endblock %}
-    </div>
-    
-    <div id="content" class="container content2">
-    </div>
+
+    {% block content %}
+    {% endblock %}
+
 
     <div id="footer">
-
+        {{ render(controller("CoreBundle:Core:footer")) }}
     </div>
 
 <!-- Optional JavaScript -->

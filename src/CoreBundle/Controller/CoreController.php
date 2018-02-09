@@ -30,4 +30,10 @@ class CoreController extends Controller
             "navItems" => $navItems
         ));
     }
+    
+    public function footerAction()
+    {
+        return $this->render('@Core/core/footer.html.twig', array(
+        ));
+    }
 }
